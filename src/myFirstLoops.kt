@@ -140,10 +140,22 @@ fun main(args: Array<String>){
 
     //To print all the even numbers used this next while loop
 
+    //DO-WHILE LOOP in kotlin
+    //the syntax is similar to the one on Java
+    //the condition on the while loop is done at the end
+    var j:Int = 1
+    do {
+        if(j%2 ==0)
+        println(j)
+        j++
+    }while (j<=10)
+
+
+
     //endregion
 
 
-}
+}//end of main func
 class Rectangle{
     var length: Int = 0
     var breadth: Int = 0
