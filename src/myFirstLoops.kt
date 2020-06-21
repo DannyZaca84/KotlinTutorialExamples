@@ -150,6 +150,46 @@ fun main(args: Array<String>){
         j++
     }while (j<=10)
 
+    //Break Statement Example
+    for (i in 1..10){
+        println(i)
+        //to print (break) the numbers to a determine value, add a condition statement
+        if (i == 5)
+            break
+
+
+    }
+    //nested loop example
+    //The myLoop@ will "name" the outer loop
+
+    myLoop@ for(i in 1..3){
+        for(j in 1..3){
+            println("$i $j")//print the values using interpolation
+            if(i == 3 && j ==2)
+            break@myLoop //it will break at the outer loop
+        }
+    }
+
+    //Continue Statement Example
+
+    // the condition will determine which value would be skipped
+    for (i in 1..10){
+    //if (i == 5){
+        //it will skip the even and will print the odd numbers
+        if (i % 2 ==0){
+          continue
+      }//the loop prints 1 ... 10 but not 5
+      println(i)
+    }
+
+    //Nested Loop Continue Statement Example
+   outer@ for (i in 1..3){
+        for (j in 1..3){
+            if(i == 2 && j ==2)
+            continue@outer
+            println("$i $j")
+        }
+    }
 
 
     //endregion
