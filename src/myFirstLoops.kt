@@ -115,7 +115,7 @@ fun main(args: Array<String>){
 
 
         //endregion
-    //region Iterators [LOOPS] Example
+//region Iterators [LOOPS] Example
         // For loop example
         // the ".." means the range of numbers, refer to "Ranges Example" if need it
     for(i in 1..10){
@@ -193,6 +193,7 @@ fun main(args: Array<String>){
 
 
     //endregion
+
 
 
 }//end of main func
